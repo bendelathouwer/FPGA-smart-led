@@ -1,0 +1,24 @@
+#Start recording tcl command: 11/16/2021 14:15:45
+#Project Location: C:/Users/Ben De Lathouwer/Documents/GitHub/FPGA-smart-led/firmware/smartled; Project name: smartled
+prj_open "C:/Users/Ben De Lathouwer/Documents/GitHub/FPGA-smart-led/firmware/smartled/smartled.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 11/16/2021 17:03:31

@@ -1,0 +1,4 @@
+VLO/Z GND  i9
+     *** o_outclk_pad.bb_inst/I is driven by constant or a pin on an incomplete path
+VHI/Z VCC  o_outclk_pad.vhi_inst
+     *** o_outclk_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path

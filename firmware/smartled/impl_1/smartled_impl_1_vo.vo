@@ -1,0 +1,63 @@
+
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 3.0.0.24.1
+
+// backanno -o smartled_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui smartled_impl_1.udb 
+// Netlist created on Sun Oct 31 14:29:15 2021
+// Netlist written on Sun Oct 31 14:29:17 2021
+// Design is for device iCE40UP5K
+// Design is for package SG48
+// Design is for performance grade High-Performance_1.2V
+
+`timescale 1 ns / 1 ps
+
+module clockdivider ( o_outclk, i_mainclk );
+  input  i_mainclk;
+  output o_outclk;
+  wire   GND_net;
+
+  SLICE_0 SLICE_0( .F0(GND_net));
+  o_outclk o_outclk_I( .PADDO(GND_net), .o_outclk(o_outclk));
+endmodule
+
+module SLICE_0 ( output F0 );
+  wire   GNDI;
+
+  lut4 i9( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module o_outclk ( input PADDO, output o_outclk );
+  wire   VCCI;
+
+  BB_B_B \o_outclk_pad.bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(o_outclk));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => o_outclk) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module BB_B_B ( input T_N, I, output O, inout B );
+
+  BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule

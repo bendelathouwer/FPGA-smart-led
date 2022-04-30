@@ -1,0 +1,6 @@
+#Start recording tcl command: 10/23/2021 20:19:52
+#Project Location: C:/Users/Ben De Lathouwer/Documents/GitHub/FPGA-smart-led/firmware/smartled; Project name: smartled
+prj_create -name "smartled" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/Ben De Lathouwer/Documents/GitHub/FPGA-smart-led/firmware/smartled/source/impl_1/clockdevider.v"
+#Stop recording: 10/23/2021 20:43:27

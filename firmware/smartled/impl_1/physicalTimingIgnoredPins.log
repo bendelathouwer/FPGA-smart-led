@@ -1,0 +1,2 @@
+SLICE/F0 GND  SLICE_0
+     *** o_outclk_pad.bb_inst/PADDO is driven by constant or a pin on an incomplete path

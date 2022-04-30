@@ -1,0 +1,31 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "clockdivider")
+  (DATE "Sun Oct 31 14:29:17 2021")
+  (VENDOR "Lattice")
+  (PROGRAM "backanno")
+  (VERSION "Radiant Software (64-bit) 3.0.0.24.1")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "o_outclk")
+    (INSTANCE o_outclk_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO o_outclk (1914:2001:2088)(1914:2001:2088))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "clockdivider")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT SLICE_0/F0 o_outclk_I/PADDO (3694:3861:4028)(3694:3861:4028))
+      )
+    )
+  )
+)
